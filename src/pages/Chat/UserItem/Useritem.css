@@ -1,0 +1,24 @@
+.user-item-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.user-item-container label{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: pink;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 10px 5px 0;
+}
+
+.user-item-container img{
+    height: 30px;
+    margin-right: 15px;
+}
