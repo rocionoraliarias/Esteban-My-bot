@@ -1,0 +1,40 @@
+.chatbot-chat-input-container{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-chat-input-container input{
+    width: 68%;
+    margin-left: 15px;
+    border: 1px solid hsl(200, 4%, 43%);
+    background-color: #EDD4C9;
+    height: 25px;
+    padding-left: 20px;
+    border-radius: 25px;
+    outline: none;
+    font-size: 14px;
+}
+
+.chatbot-chat-input-container input ::placeholder{
+font-size: 14px;
+}
+
+
+.chatbot-chat-input-container button{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 1px solid #5fb87d;
+    background-color: #4AC29A;
+    background-image: url('../../../assets/imagenes/sendicon.png');
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.16);
+}
+
+
