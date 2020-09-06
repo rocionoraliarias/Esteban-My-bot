@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useEffect} from 'react'
 import EstebanItem from './EstebanItem/EstebanItem'
 import UserItem from './UserItem/Useritem'
 import Input from './InputChat/InputChat'
@@ -14,9 +14,30 @@ const [chat , setChat ] = useState([
  {
      id:0,
      emiter: 'esteban',
-     msg:[ 'Hola!','¿ Como es tu nombre?', 'a ver que onda']
+     msg:[ 'Hola!','¿ Como es tu nombre?']
  }])
 
+
+function firstResponse (name){
+    let newChat ={
+        id: idCounter + 2,
+        emiter: 'esteban',
+        msg: [ 'Mucho Gusto ' + name + '!' , ' mi nombre es esteban, soy un bot aun en desarollo', 'eso quiere decir que aun no estoy preparado para tus preguntas expecificas','pero igualmente podemos interactuar', 'selecciona una ocpion de la lista y con gusto te ayudare']
+    }
+    if(newChat){
+        setChat([
+            ...chat, newChat
+        ])
+    }
+}
+
+useEffect(() => {
+    if(chat.length === 2 ){
+        setTimeout(() => firstResponse(msg.msg),500);
+        setMsg({ ...msg, msg: ''});
+        //setTimeout(() => setOpenSelect(true),600);
+    }
+   }, [chat]);
 
 
 function GetUserMessage (value){
@@ -38,8 +59,6 @@ function sendMessage(e) {
 
 
 
-console.log('chat', chat)
-console.log('msg:',msg)
 
     return ( 
         <div className="chatbot-chat-container">
@@ -60,6 +79,7 @@ console.log('msg:',msg)
                     </div>
                     <div className="chatbot-chat-container-input">
                     <Input
+                    msg={msg}
                     GetUserMessage={GetUserMessage}
                     sendMessage={sendMessage}
                     />
