@@ -1,7 +1,9 @@
 import React, { useState, useEffect} from 'react'
 import EstebanItem from './EstebanItem/EstebanItem'
 import UserItem from './UserItem/Useritem'
+import Select from './select/select'
 import Input from './InputChat/InputChat'
+import { alegre, triste, enojado, ansioso, indeciso} from '../../Data/Actions'
 import './chat.css'
 
 const Chat = () => {
@@ -22,7 +24,7 @@ function firstResponse (name){
     let newChat ={
         id: idCounter + 2,
         emiter: 'esteban',
-        msg: [ 'Mucho Gusto ' + name + '!' , ' mi nombre es esteban, soy un bot aun en desarollo', 'eso quiere decir que aun no estoy preparado para tus preguntas expecificas','pero igualmente podemos interactuar', 'selecciona una ocpion de la lista y con gusto te ayudare']
+        msg: [ 'Mucho Gusto ' + name + '!' , ' mi nombre es esteban, soy un bot aun en desarollo', 'eso quiere decir que aun no estoy preparado para tus preguntas expecificas','pero igualmente podemos interactuar', 'Te ayudare a alegir que comer en base a tu estado de animo, comienza seleccionando una opcion de la lista']
     }
     if(newChat){
         setChat([
@@ -57,6 +59,73 @@ function sendMessage(e) {
     ])
 };
 
+let options = [
+
+    {
+        id: 'Alegre',
+        message:'Estoy Alegre'
+    },
+    {
+        id:'Triste',
+        message:'Estoy Triste'
+    },
+    {
+        id:'Enojado',
+        message:'Estoy enojado'
+    },
+    {
+        id:'Ansioso',
+        message: 'Estoy ansioso'
+    },
+    {
+        id: 'Indeciso',
+        message:' Estoy indeciso'
+    }
+
+]
+
+const [ interactions, setInteractions ] = useState([]);
+
+
+function handlerSelectionsOptions(value) {
+    let result;
+    switch(value) {
+        case 'Alegre':
+         result = alegre[Math.floor(Math.random()*alegre.length)]
+         if(result){
+             setInteractions([...interactions,result.msg])
+         }
+         break;
+         case 'Triste':
+            result = triste[Math.floor(Math.random()*triste.length)]
+            if(result){
+                setInteractions([...interactions,result.msg])
+            }
+            break;
+            case 'Enojado':
+                result = enojado[Math.floor(Math.random()*enojado.length)]
+                if(result){
+                    setInteractions([...interactions,result.msg])
+                }
+                break;
+                case 'Ansioso':
+                result = ansioso[Math.floor(Math.random()*ansioso.length)]
+                if(result){
+                    setInteractions([...interactions,result.msg])
+                }
+                break;
+         default:
+            result = indeciso[Math.floor(Math.random()*indeciso.length)]
+            if(result){
+                setInteractions([...interactions,result.msg])
+            }
+            break;
+    }
+}
+
+
+
+
 
 
 
@@ -75,6 +144,8 @@ function sendMessage(e) {
                         text={message.msg} />
                         )}
                         
+                        <Select
+                        options ={options}/>
                        
                     </div>
                     <div className="chatbot-chat-container-input">

@@ -1,0 +1,35 @@
+.selector-content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgb(233, 103, 124);
+    border-radius: 5px;
+    width: 70%;
+    margin: 10px 0 0 65px;
+}
+.selector-container{
+    display: flex;
+    flex-direction: column;
+   
+    width: 90%;
+}
+.selector-container label{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: pink;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 10px 5px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.selector-container label:hover{
+    background-color: blueviolet;
+}
