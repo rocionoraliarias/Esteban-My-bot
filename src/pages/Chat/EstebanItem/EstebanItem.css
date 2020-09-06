@@ -1,13 +1,14 @@
 .esteban-item-container{
     display: flex;
-    width: auto;
-    align-items: center;
+    max-width: 90%;
 }
 
 .esteban-item-container img{
  height: 50px;
  margin: 10px 0 0  15px;
 }
+
+
 
 .esteban-item-container label{
     margin: 5px 0 0  10px;
@@ -17,7 +18,13 @@
     padding:10px;
     border-radius: 5px;
     width: fit-content;
-    max-width: 7%;
     font-weight: normal;
     box-sizing: border-box;
+}
+
+.esteban-item-messages {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
 }

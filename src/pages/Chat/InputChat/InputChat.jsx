@@ -1,13 +1,15 @@
 import React from 'react';
 import './InputChat.css'
 
-const Input = () => {
+const Input = ({sendMessage , GetUserMessage}) => {
     return ( 
-        <form className="chatbot-chat-input-container">
+        <form 
+        onSubmit={ (e) => sendMessage(e)}
+        className="chatbot-chat-input-container">            
             <input
             placeholder='Escribi tu nombre'
             type='text'
-            value=''
+            onChange = { (e) => GetUserMessage(e.target.value)}
             />
             <button 
             type= 'submit'

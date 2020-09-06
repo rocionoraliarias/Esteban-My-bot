@@ -2,12 +2,15 @@ import React from 'react';
 import './EstebanItem.css'
 import catAvatar from '../../../assets/imagenes/avataresteban.png'
 
-const EstebanItem = () => {
+const EstebanItem = ({text}) => {
     return ( 
        <div className="esteban-item-container">
            <img src={catAvatar}/>
-           <div className="cat-item-messages">
-                <label>mensaje.</label>
+           
+           <div className="esteban-item-messages">
+           {text.map((t,index) => 
+                <label key= {index}>{t}</label>
+           )}
            </div>
        </div>
      );
