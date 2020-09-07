@@ -4,7 +4,7 @@ import EstebanItem from './EstebanItem/EstebanItem'
 import UserItem from './UserItem/Useritem'
 import Select from './select/select'
 import Input from './InputChat/InputChat'
-import { alegre, triste, enojado, ansioso, indeciso} from '../../Data/Actions'
+import { alegre, triste, ansioso, indeciso} from '../../Data/Actions'
 import './chat.css'
 
 
@@ -77,10 +77,6 @@ let options = [
         message:'Estoy Triste'
     },
     {
-        id:'Enojado',
-        message:'Estoy enojado'
-    },
-    {
         id:'Ansioso',
         message: 'Estoy ansioso'
     },
@@ -109,12 +105,6 @@ function handlerSelectionsOptions(value) {
                 setInteractions([...interactions,result.msg])
             }
             break;
-            case 'Enojado':
-                result = enojado[Math.floor(Math.random()*enojado.length)]
-                if(result){
-                    setInteractions([...interactions,result.msg])
-                }
-                break;
                 case 'Ansioso':
                 result = ansioso[Math.floor(Math.random()*ansioso.length)]
                 if(result){

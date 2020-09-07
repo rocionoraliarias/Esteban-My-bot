@@ -1,18 +1,18 @@
 export let alegre = [
     {
-        msg: ['djan ']
+        msg: ['Que bueno que estes de buen humor! siempre es bueno celebrarlo con una Pizza!']
     },
     {
-        msg: [' cbdcñk']
+        msg: [' Tacos']
     },
     {
-        msg: [' ']
+        msg: [' ñoquis']
     },
     {
-        msg: [' ']
+        msg: ['tortilla de papa']
     },
     {
-        msg: [' ']
+        msg: ['Asado ']
     }
 ];
 
@@ -24,66 +24,48 @@ export let triste = [
         msg: [' Helado']
     },
     {
-        msg: [' ']
+        msg: ['Todos tenemos malos dias, que te parece pedirte una rica hamburgesa y disfrutarla mirando algo en netflix ;)']
     },
     {
-        msg: [' ']
+        msg: ['Pizza o empanadas']
     },
     {
-        msg: [' ']
-    }
-];
-
-export let enojado = [
-    {
-        msg: [' ']
-    },
-    {
-        msg: [' ']
-    },
-    {
-        msg: [' ']
-    },
-    {
-        msg: [' ']
-    },
-    {
-        msg: [' ']
+        msg: ['Milanesa con fideos ']
     }
 ];
 
 export let ansioso = [
     {
-        msg: [' ']
+        msg: ['Te conte que soy una persona muy ansiosa? por eso siempre tengo a mano un  yogur Con cereales! ']
     },
     {
-        msg: [' ']
+        msg: [' Nada me ayuda mas que relajarme preparandome una sopa!']
     },
     {
-        msg: [' ']
+        msg: [' Ensalda de frutas ']
     },
     {
-        msg: [' ']
+        msg: [' Frutos Secos']
     },
     {
-        msg: [' ']
+        msg: [' Pochoclos']
     }
 ];
 
 export let indeciso = [
     {
-        msg: [' ']
+        msg: [' Milanesa de berenjena']
     },
     {
-        msg: [' ']
+        msg: [' Tarta! ']
     },
     {
-        msg: [' ']
+        msg: [' Salteado de vegetales']
     },
     {
-        msg: [' ']
+        msg: ['Omellete ']
     },
     {
-        msg: [' ']
+        msg: ['Milanesa con papa fritas ']
     }
 ]
