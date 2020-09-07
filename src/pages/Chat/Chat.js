@@ -1,4 +1,5 @@
 import React, { useState, useEffect} from 'react'
+import Fade from 'react-reveal/Fade'
 import EstebanItem from './EstebanItem/EstebanItem'
 import UserItem from './UserItem/Useritem'
 import Select from './select/select'
@@ -11,6 +12,9 @@ const Chat = () => {
 let idCounter = 0;
 
 const [ msg, setMsg ] = useState({});
+
+const [ openSelect , setOpenSelect ] = useState(false);
+
 
 const [chat , setChat ] = useState([
  {
@@ -37,7 +41,7 @@ useEffect(() => {
     if(chat.length === 2 ){
         setTimeout(() => firstResponse(msg.msg),500);
         setMsg({ ...msg, msg: ''});
-        //setTimeout(() => setOpenSelect(true),600);
+        setTimeout(() => setOpenSelect(true),600);
     }
    }, [chat]);
 
@@ -143,13 +147,29 @@ function handlerSelectionsOptions(value) {
                         key={index}
                         text={message.msg} />
                         )}
-                        
+                        { openSelect &&
                         <Select
+                        handlerSelectionsOptions={handlerSelectionsOptions}
                         options ={options}/>
-                       
+                       }
+                       {
+                           interactions.length > 0 &&  interactions.map((interaction, index) => 
+                           <>
+                           <Fade left>
+                               <EstebanItem key={index} text={ interaction}></EstebanItem>
+                           </Fade>
+                           <Fade right>
+                                <Select 
+                                 handlerSelectionsOptions={handlerSelectionsOptions}
+                                options={options}/>
+                           </Fade>
+                           </>
+                           )
+                       }
                     </div>
                     <div className="chatbot-chat-container-input">
                     <Input
+                    chat={chat}
                     msg={msg}
                     GetUserMessage={GetUserMessage}
                     sendMessage={sendMessage}
