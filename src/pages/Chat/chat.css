@@ -26,6 +26,7 @@
 .chatbot-chat-container-body{
     width: 100%;
     height: 90%;
+    overflow: auto;
 }
 
 .chatbot-chat-container-input{
