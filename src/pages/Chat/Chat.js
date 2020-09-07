@@ -7,6 +7,9 @@ import Input from './InputChat/InputChat'
 import { alegre, triste, enojado, ansioso, indeciso} from '../../Data/Actions'
 import './chat.css'
 
+
+
+
 const Chat = () => {
 
 let idCounter = 0;
@@ -139,13 +142,17 @@ function handlerSelectionsOptions(value) {
                 <div className="chatbot-chat">
                     <div className="chatbot-chat-container-body">
                         {chat.map((message, index) => message.emiter === 'esteban' ? 
+                        <Fade left>
                         <EstebanItem 
                         key={index}
                         text={message.msg} />
+                        </Fade>
                         : 
+                        <Fade right>
                         <UserItem 
                         key={index}
                         text={message.msg} />
+                        </Fade>
                         )}
                         { openSelect &&
                         <Select
