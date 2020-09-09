@@ -3,8 +3,7 @@
 }
 
 @media (min-width: 768px){
-    .Contenedor-animation{
-        margin-top: 0;
-       
-    }
+  .Contenedor-animation{
+    margin-top: 150%;
+  }
 }

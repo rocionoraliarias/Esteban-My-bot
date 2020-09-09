@@ -1,71 +1,71 @@
 export let alegre = [
     {
-        msg: ['Que bueno que estes de buen humor! siempre es bueno celebrarlo con una Pizza!']
+        msg: ['Que bueno que estés de buen humor! siempre es bueno celebrarlo con una Pizza 🍕!']
     },
     {
-        msg: [' Tacos']
+        msg: ['¡Que alegría que estés alegre! , festejemos con una fiesta de Tacos 🌮 ']
     },
     {
-        msg: [' ñoquis']
+        msg: ['¿Que te parece preparar unos ñoquis? Mí comida favorita de todos los tiempos!']
     },
     {
-        msg: ['tortilla de papa']
+        msg: ['Comamos tortilla de papa, es riquísima!']
     },
     {
-        msg: ['Asado ']
+        msg: ['Si estoy alegre me gusta disfrutarlo con un asado, tomando un vermut abajo del sol!🍸']
     }
 ];
 
 export let triste = [
     {
-        msg: ['Siempre es bueno levantar el humor con algo de chocolate! yo soy fanatico del chocolate en barra!']
+        msg: ['Siempre es bueno levantar el humor con algo de chocolate! yo soy fanático del chocolate en barra!']
     },
     {
-        msg: [' Helado']
+        msg: ['🍨 y ahora vamos a olvidar nuestros problemas con un gran tazón de helado!🍨']
     },
     {
-        msg: ['Todos tenemos malos dias, que te parece pedirte una rica hamburgesa y disfrutarla mirando algo en netflix ;)']
+        msg: ['Todos tenemos malos días, que te parece pedirte una rica hamburguesa y disfrutarla mirando algo en Netflix ;)']
     },
     {
-        msg: ['Pizza o empanadas']
+        msg: ['No te preocupes, relájate pidiendo una Pizza o empanadas y mirando algo divertido en la Tv 🍕']
     },
     {
-        msg: ['Milanesa con fideos ']
+        msg: ['Nada es mas comfort food que las Milanesas con fideos! ']
     }
 ];
 
 export let ansioso = [
     {
-        msg: ['Te conte que soy una persona muy ansiosa? por eso siempre tengo a mano un  yogur Con cereales! ']
+        msg: ['Te conté que soy una persona muy ansiosa? por eso siempre tengo a mano un  yogur Con cereales!']
     },
     {
-        msg: [' Nada me ayuda mas que relajarme preparandome una sopa!']
+        msg: ['Nada me ayuda mas que relajarme preparándome una sopa!']
     },
     {
-        msg: [' Ensalda de frutas ']
+        msg: ['Comamos algo fresco y variado, ¡ensalada de frutas!']
     },
     {
-        msg: [' Frutos Secos']
+        msg: ['Siempre tengo un puñado de  Frutos Secos, deberías hacer lo mismo 😀']
     },
     {
-        msg: [' Pochoclos']
+        msg: ['Y si disfrutamos de unos pochoclos? Se hacen rapidísimos y son divertidos!']
     }
 ];
 
 export let indeciso = [
     {
-        msg: [' Milanesa de berenjena']
+        msg: [' Milanesa de berenjena 🍆!!!']
     },
     {
-        msg: [' Tarta! ']
+        msg: [' mmm... yo también estaba indeciso, pero me decidí por una Tarta! ']
     },
     {
-        msg: [' Salteado de vegetales']
+        msg: [' que fiaca no? Hagamos algo rápido, sale un Salteado de vegetales!']
     },
     {
-        msg: ['Omellete ']
+        msg: ['Hagamos algo divertido y rápido, comamos omellete!! 🍳']
     },
     {
-        msg: ['Milanesa con papa fritas ']
+        msg: ['¡Milanesa con papa fritas! nunca falla.']
     }
 ]

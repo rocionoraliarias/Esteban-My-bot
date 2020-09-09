@@ -31,7 +31,7 @@ function firstResponse (name){
     let newChat ={
         id: idCounter + 2,
         emiter: 'esteban',
-        msg: [ 'Mucho Gusto ' + name + '!' , ' mi nombre es esteban, soy un bot aun en desarollo', 'eso quiere decir que aun no estoy preparado para tus preguntas expecificas','pero igualmente podemos interactuar', 'Te ayudare a alegir que comer en base a tu estado de animo, comienza seleccionando una opcion de la lista']
+        msg: [ 'Mucho Gusto ' + name + '!' , ' mi nombre es esteban, soy un bot aun en desarollo', 'No estoy preparado para tus preguntas expecificas pero igualmente podemos interactuar', 'Te ayudare a alegir que comer en base a tu estado de animo, comienza seleccionando una opcion de la lista']
     }
     if(newChat){
         setChat([
